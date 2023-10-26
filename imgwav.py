@@ -1,8 +1,8 @@
 from moviepy.editor import ImageClip, AudioFileClip, VideoFileClip
 
 def combineimageaudio():
-    image_path = 'C:/Users/Asha Rani K P/OneDrive/Documents/MD1/imaget.jpg'
-    audio_path = 'C:/Users/Asha Rani K P/OneDrive/Documents/MD1/audio.wav'
+    image_path = 'path_to_directory/imaget.jpg'
+    audio_path = 'path_to_directory/audio.wav'
 
 # Load the image clip
     image_clip = ImageClip(image_path, duration=4)  # Set a default duration value
@@ -21,12 +21,12 @@ def combineimageaudio():
     video_clip.fps = 24
 
 # Write the final video with the combined image and audio
-    output_path = 'C:/Users/Asha Rani K P/OneDrive/Documents/MD1/record.mp4'
+    output_path = 'path_to_directory/record.mp4'
     video_clip.write_videofile(output_path, codec='libx264', audio_codec='aac')
 
 def combinevideoaudio():
-    video_path = 'C:/Users/Asha Rani K P/OneDrive/Documents/MD1/video.mp4'
-    audio_path = 'C:/Users/Asha Rani K P/OneDrive/Documents/MD1/audio.wav'
+    video_path = 'path_to_directory/video.mp4'
+    audio_path = 'path_to_directory/audio.wav'
 
 # Load the image clip
     video_clip = VideoFileClip(video_path)  # Set a default duration value
@@ -45,5 +45,5 @@ def combinevideoaudio():
     video_clip1.fps = 24
 
 # Write the final video with the combined image and audio
-    output_path = 'C:/Users/Asha Rani K P/OneDrive/Documents/MD1/record1.mp4'
+    output_path = 'path_to_directory/record1.mp4'
     video_clip1.write_videofile(output_path, codec='libx264', audio_codec='aac')

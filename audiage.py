@@ -235,13 +235,13 @@ gen_image.place(x=500, y=415)
 gen_vid = ctk.CTkButton(master=app, height=40, width=120, text_color="white", fg_color="green", font=('Arial',16), command=gen_video)
 gen_vid.configure(text="Generate Video")
 gen_vid.pack()
-gen_vid.bind("<Button-1>", lambda e: webbrowser.open_new('C:/Users/Asha Rani K P/OneDrive/Documents/MD1/record1.mp4'))
+gen_vid.bind("<Button-1>", lambda e: webbrowser.open_new('path_to_directory/record1.mp4'))
 gen_vid.place(x=700, y=415)
 
 gen_aud = ctk.CTkButton(master=app, height=40, width=120, text_color="white", fg_color="green", font=('Arial',16),command=gen_audio)
 gen_aud.configure(text="Generate Music")
 gen_aud.pack()
-gen_aud.bind("<Button-1>", lambda e: webbrowser.open_new('C:/Users/Asha Rani K P/OneDrive/Documents/MD1/record.mp4'))
+gen_aud.bind("<Button-1>", lambda e: webbrowser.open_new('path_to_directory/record.mp4'))
 gen_aud.place(x=900, y=415)
 
 openai.api_key = 'YOUR_OPENAI_API_KEY'
